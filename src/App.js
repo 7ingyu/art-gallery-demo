@@ -17,7 +17,7 @@ function App() {
   }, [artId])
 
   return (
-    <div className="App container">
+    <div className="App container mt-5">
       <Buttons artId={artId} setArtId={setArtId}/>
       <Gallery {...art}/>
     </div>
