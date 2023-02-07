@@ -15,8 +15,8 @@ export default function Buttons ({
   }
 
   return (
-    <div className="d-flex justify-content-center">
-      <div className="btn-group" role="group">
+    <div>
+      <div className="input-group justify-content-center" role="group">
         <button
           className="btn btn-sm btn-secondary px-4"
           onClick={decrement}
@@ -24,6 +24,11 @@ export default function Buttons ({
         >
           {`<`}
         </button>
+        <input
+          type="number"
+          value={artId}
+          onChange={(e) => setArtId(e.target.value)}
+        />
         <button
           className="btn btn-sm btn-secondary px-4"
           onClick={increment}
