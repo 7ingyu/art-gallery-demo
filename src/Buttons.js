@@ -27,7 +27,7 @@ export default function Buttons ({
         <input
           type="number"
           value={artId}
-          onChange={(e) => setArtId(e.target.value)}
+          onChange={(e) => setArtId(Number(e.target.value))}
         />
         <button
           className="btn btn-sm btn-secondary px-4"
